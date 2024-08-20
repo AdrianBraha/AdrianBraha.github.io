@@ -1,0 +1,123 @@
+.gradient-background {
+  background: linear-gradient(300deg, #9B3922, #3C0753, #910A67);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.carousel {
+  position: relative; 
+}
+
+.svg-size{
+  cursor: pointer;
+  width: 70%;
+  height: 70%;
+}
+.carousel-indicators {
+  position: absolute; 
+  bottom: 40px; 
+  left: 0px; 
+}
+
+
+div > .lead{
+    color:black;
+}
+h1{
+    color:whitesmoke;
+}
+.float_left{
+    display: flex;
+    float:left
+}
+
+.hidden_text{
+  display: none;
+}
+.diveder{
+  width:100%;
+  height:100px;
+}
+.card{
+  width: 50vh;
+}
+.expand_text{
+  display: none;
+}
+.whit_border{
+  border: 2px solid black;
+}
+#max_height{
+  max-height: 500px;
+}
+
+#icon-container {
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  z-index: 101;
+  width: 50px;
+  height: 50px;
+}
+
+#arrow-icon {
+  cursor: pointer;
+  width: 70%;
+  height: 70%;
+}
+.carousel-item > img{
+  width: 83.1353919239905vh;
+  height:  83.1353919239905vh;
+}
+
+#nav_bar {
+  width: 280px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: -280px; 
+  
+  color: white;
+  z-index: 100;
+  transition: left 0.3s ease; 
+}
+
+#icon-container:hover + #nav_bar,
+#nav_bar:hover {
+  left: 0; 
+}
+
+    .scrollspy-example {
+        position: relative;
+        height: 300px;
+        overflow: auto;
+    }
+
+    .scrollspy-example .list-group {
+        position: sticky;
+        top: 0;
+    }
+
+    
+    #arrow-icon {
+      cursor: pointer;
+      width: 70%;
+      height: 70%;
+      transition: transform 0.3s ease;
+  }
+  
+  #icon-container.active #arrow-icon {
+      transform: rotate(180deg); 
+  }

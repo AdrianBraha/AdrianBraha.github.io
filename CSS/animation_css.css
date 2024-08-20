@@ -1,0 +1,91 @@
+.gradient-background-red {
+  background: linear-gradient(300deg, #151515, #A91D3A, #C73659);
+  background-size: 180% 180%;
+  animation: gradient-animation 0.5s ease infinite;
+}
+.gradient-background-blue {
+  background: linear-gradient(300deg, #151515, #03346E, #6EACDA);
+  background-size: 180% 180%;
+  animation: gradient-animation 0.5s ease infinite;
+}
+.gradient-background-purpel {
+  background: linear-gradient(300deg, #151515, #3A1078, #4E31AA);
+  background-size: 180% 180%;
+  animation: gradient-animation 0.5s ease infinite;
+}
+
+
+
+.animation-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.circle {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  animation: fadeIn 1s forwards, moveToCenter 4s forwards;
+}
+
+.red-circle {
+  left: 0%;
+  animation-delay: 0s;
+}
+
+.blue-circle {
+  right: -250px;
+  animation-delay: 0s; 
+}
+
+.purple-circle {
+  background-color: purple;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  animation: appear 1s forwards,expand 3s ease-in;
+  animation-delay: 3s; 
+
+}
+
+@keyframes fadeIn {
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes moveToCenter {
+  to {
+      left: 50%;
+      right: 50%;
+      transform: translateX(-50%) translateY(-50%);
+  }
+}
+
+@keyframes appear {
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes expand{
+  from{
+      width: 500px;
+      height: 500px;
+  }
+  to{
+      width: 5000px;
+      height: 5000px;
+  }
+}
+
+#main-content{
+  display: none;
+}
